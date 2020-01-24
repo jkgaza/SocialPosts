@@ -1,9 +1,22 @@
 <h1>My Thoughts</h1>
-<button id= "new-button" (click)="submitPost()">New Thought</button>
+<button id= "new-button">New Thought</button>
+<div id ="main-container">
 
-<app-post></app-post>
-<app-post-form></app-post-form>
-<app-social-posts></app-social-posts>
+    <div id="theModal" class="modal">
 
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+      
+      </div>
 
-<router-outlet></router-outlet>
+    <app-post></app-post>
+    <app-post-form></app-post-form>
+    <app-social-posts></app-social-posts>
+    
+    
+    <router-outlet></router-outlet>
+
+</div>
