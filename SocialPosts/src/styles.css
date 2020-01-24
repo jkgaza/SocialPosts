@@ -5,6 +5,7 @@ body{
 h1{
     font-family: 'Pacifico', cursive;
     color: rgb(3, 169, 244);
+    text-align: center;
 }
 
 p{
@@ -12,7 +13,16 @@ p{
 }
 
 #main-container{
+    display: block;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
+    align-items: center;
+}
+
+#new-button{
+    font-family: 'Dosis', sans-serif;
+    width: 100%;
+    font-size: medium;
+    border-radius: 5px;
 }
