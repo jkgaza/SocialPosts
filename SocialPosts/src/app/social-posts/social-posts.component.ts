@@ -11,7 +11,7 @@ export class SocialPostsComponent implements OnInit {
 
 
   posts = [
-    {title: "Saw a dog today", thought: "It was super neat!"},
+    {title: "Saw a dog today", thought: "It was super neat."},
     {title: "I bought a coffee", thought: "I had a hard day and I wanted to. Treat. My. Self."},
     {title: "Did you know", thought: "That caviar is super, super gross."},
     {title: "What's the deal??", thought: "Pants are weird. What's up with that?"},
@@ -21,6 +21,14 @@ export class SocialPostsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSubmit(title: string, thought: string){
+
+  }
+
+  onDelete(index: number){
+    this.posts.splice(index, 1);
   }
 
 }
