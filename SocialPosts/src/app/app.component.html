@@ -2,19 +2,11 @@
 <button id= "new-button">New Thought</button>
 <div id ="main-container">
 
-    <div id="theModal" class="modal">
 
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
-        </div>
-      
-    </div>
 
     
-    <app-post-form (delete) = "onDeleted(i)"></app-post-form>
-    <app-social-posts></app-social-posts>
+    <app-post-form></app-post-form>
+    <app-social-posts  (delete) = "onDeleted(i)"></app-social-posts>
     
     
     <!-- <router-outlet></router-outlet> -->
