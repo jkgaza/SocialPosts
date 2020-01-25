@@ -27,7 +27,7 @@ export class SocialPostsComponent implements OnInit {
 
   }
 
-  onDelete(index: number){
+  onDeleted(index: number){
     this.posts.splice(index, 1);
   }
 

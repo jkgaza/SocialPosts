@@ -1,10 +1,23 @@
+#container{
+    position: relative;
+}
+
 #title{
     font-size: larger;
     font-weight: bold;
     font-family: 'Dosis', sans-serif;
+    margin: auto;
 }
 
 #thought{
-    font-size: medium;
+    font-size: small;
     font-family: 'Dosis', sans-serif;
+    margin: auto;
+    border-bottom: 0.5px solid lightgray;
+}
+
+.material-icons{
+    position: absolute;
+    right: 0;
+    margin-left: 5px;
 }

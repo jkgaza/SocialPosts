@@ -25,4 +25,8 @@ export class AppComponent implements OnInit {
   ngOnInit(){
 
   }
+
+  onDeleted(index: number){
+    this.posts.splice(index, 1);
+  }
 }

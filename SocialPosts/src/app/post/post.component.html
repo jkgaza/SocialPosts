@@ -1,14 +1,14 @@
-<ul>
-    <span
+<ul id = 'container'>
+    <div
     [ngClass]="{
       title: this.title,
       thought: this.thought
     }"
-    id = 'title'>{{ post.title }}</span
+    id = 'title'>{{ post.title }}</div
   >
-  <span id = 'thought'>{{ post.thought }}</span>
-  <button class="material-icons">
+  <div id = 'thought'>{{ post.thought }}   <button class="material-icons" (click)= "deletePost()">
     delete
-  </button>
+  </button></div>
+
 </ul>
 
