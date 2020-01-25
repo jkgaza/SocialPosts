@@ -1,2 +1,7 @@
 <p>social-posts works!</p>
-<span>{{posts}}</span>
+<span
+[ngClass] = "{
+    'title': this.title,
+    'thought': this.thought
+}"
+>{{posts}}</span>
