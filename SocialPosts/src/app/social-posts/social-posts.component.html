@@ -1,7 +1,3 @@
 <p>social-posts works!</p>
-<span
-[ngClass] = "{
-    'title': this.title,
-    'thought': this.thought
-}"
->{{posts}}</span>
+
+<div><app-post *ngFor="let post of posts" [post] ="post"></app-post></div>

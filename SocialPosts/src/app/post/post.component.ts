@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Input } from '@angular/core';
 
 export interface Post{
   title: string;
@@ -14,6 +13,8 @@ export interface Post{
 
 export class PostComponent implements OnInit {
 
+  @Input() post : Post;
+  
   constructor() { }
 
   ngOnInit() {
