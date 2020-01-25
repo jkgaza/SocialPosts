@@ -16,12 +16,12 @@ export class PostComponent implements OnInit {
 
   @Input() post : Post;
 
-  @Output() delete = new EventEmitter();
+  @Output() deleted = new EventEmitter();
   
   constructor() { }
 
   deletePost(){
-    this.delete.emit();
+    this.deleted.emit();
   }
 
   ngOnInit() {

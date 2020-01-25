@@ -31,4 +31,6 @@ export class SocialPostsComponent implements OnInit {
     this.posts.splice(index, 1);
   }
 
+  
+
 }
