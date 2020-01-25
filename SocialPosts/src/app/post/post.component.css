@@ -1,8 +1,10 @@
-.title{
+#title{
     font-size: larger;
     font-weight: bold;
+    font-family: 'Dosis', sans-serif;
 }
 
-.thought{
+#thought{
     font-size: medium;
+    font-family: 'Dosis', sans-serif;
 }

@@ -1,7 +1,14 @@
-<p>post works!</p>
-<span
-[ngClass] = "{
-    'title': this.title,
-    'thought': this.thought
-}"
->{{post.title }}</span> {{post.thought}}
+<ul>
+    <span
+    [ngClass]="{
+      title: this.title,
+      thought: this.thought
+    }"
+    id = 'title'>{{ post.title }}</span
+  >
+  <span id = 'thought'>{{ post.thought }}</span>
+  <button class="material-icons">
+    delete
+  </button>
+</ul>
+
