@@ -1,14 +1,14 @@
 <h1>My Thoughts</h1>
-<button id = "myBtn" class = "new-button">New Thought</button>
+<button id = "myBtn" class = "new-button" (click) = "onOpenModal()">New Thought</button>
 <div id ="main-container">
 
 
 
     
-    <app-post-form></app-post-form>
+    <app-post-form *ngIf = "isModalOpen" ></app-post-form>
     <app-social-posts  (delete) = "onDeleted(i)"></app-social-posts>
     
     
-    <!-- <router-outlet></router-outlet> -->
+ 
 
 </div>
