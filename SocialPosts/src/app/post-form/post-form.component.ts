@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-post-form',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class PostFormComponent implements OnInit {
-  
+  @Input()isModalOpen: boolean;
 
   constructor() { }
 
@@ -41,4 +41,7 @@ export class PostFormComponent implements OnInit {
 //   }
 
 
+}
+closeModal(isModalOpen: boolean) {
+  this.isModalOpen = false;
 }}

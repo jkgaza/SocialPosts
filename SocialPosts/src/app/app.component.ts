@@ -1,33 +1,27 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"]
 })
 export class AppComponent implements OnInit {
   @Input() title: string;
   @Input() thought: string;
   // title = 'SocialPosts';
 
-public isModalOpen = false;
+  public isModalOpen = false;
 
-  constructor(){
+  constructor() {}
 
-  }
+  ngOnInit() {}
 
-  ngOnInit(){
-
-  }
-
-  onOpenModal(){
+  onOpenModal() {
     this.isModalOpen = true;
-    console.log("hello");  }
+    console.log("hello");
+  }
 
-    onCloseModal(isModalOpen : boolean){
-      if(isModalOpen = true){
-        isModalOpen = false;
-      }
-    }
-
+  closeModal(isModalOpen: boolean) {
+    this.isModalOpen = false;
+  }
 }
