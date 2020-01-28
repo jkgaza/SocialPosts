@@ -5,7 +5,7 @@
 
 
     
-    <app-post-form *ngIf = "isModalOpen" ></app-post-form>
+    <app-post-form *ngIf = "isModalOpen" (closed) = "closeModal()"></app-post-form>
     <app-social-posts  (delete) = "onDeleted(i)"></app-social-posts>
     
     

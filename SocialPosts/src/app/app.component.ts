@@ -21,7 +21,8 @@ export class AppComponent implements OnInit {
     console.log("hello");
   }
 
-  closeModal(isModalOpen: boolean) {
+  closeModal() {
+    console.log("closing");
     this.isModalOpen = false;
   }
 }
