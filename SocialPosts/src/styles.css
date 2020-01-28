@@ -30,8 +30,19 @@ p{
 }
 
 .modal-content{
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
+}
+
+textarea{
+    width: 98.5%;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid black;
+    resize: none;
+    padding-top: -2px;
+    font-size: medium;
+    font-family: 'Dosis', sans-serif;
 }
 
 /* The Modal (background) */
@@ -51,10 +62,11 @@ p{
   /* Modal Content/Box */
   .modal-content {
     background-color: #B1DDEA;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 8% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 40%; /* Could be more or less, depending on screen size */
+    border-radius: 5px;
   }
   
   /* The Close Button */
