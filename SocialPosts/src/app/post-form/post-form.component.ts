@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class PostFormComponent implements OnInit {
+  
 
   constructor() { }
 
   ngOnInit() {
     
-
     
 //     // Get the modal
 // let modal = document.getElementById("myModal");

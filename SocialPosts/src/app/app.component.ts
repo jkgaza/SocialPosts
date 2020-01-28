@@ -20,12 +20,14 @@ public isModalOpen = false;
 
   }
 
-  onCloseModal(){
-    this.isModalOpen = false;
-  }
-
   onOpenModal(){
     this.isModalOpen = true;
     console.log("hello");  }
+
+    onCloseModal(isModalOpen : boolean){
+      if(isModalOpen = true){
+        isModalOpen = false;
+      }
+    }
 
 }

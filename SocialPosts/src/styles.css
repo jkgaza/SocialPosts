@@ -29,7 +29,11 @@ p{
     padding: 15px;
 }
 
-
+.modal-content{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
 
 /* The Modal (background) */
 .modal {
