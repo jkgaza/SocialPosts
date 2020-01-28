@@ -4,10 +4,11 @@
     <div class="modal-content">
       <span (click) = "closeModal()" class="close">&times;</span>
       <p class ="modalText">Title</p>
-      <textarea rows ="4" cols="70"></textarea>
+      <textarea ngModel="newPost.title" rows ="4" cols="70"></textarea>
       <p class = "modalText">Thought</p>
-      <textarea rows ="4" cols="70"></textarea>
-      <button class = "submit" (click) = "submitPost()">Submit Post</button>
+      <textarea ngModel="newPost.thought" rows ="4" cols="70"></textarea>
+      <button class = "submit" (click) = "submitPost(newPost)">Submit Post</button>
+      <!-- <input [(ngModel)]="NewPost"> -->
     </div>
     
   

@@ -31,8 +31,4 @@ export class SocialPostsComponent implements OnInit {
     this.posts.splice(index, 1);
   }
 
-  submitPost(post: string){
-    this.posts.push({title: "string", thought: "string"});
-  } 
-
 }

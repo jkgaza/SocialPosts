@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
-import { stringify } from 'querystring';
+// import { stringify } from 'querystring';
 
 
 @Component({
@@ -10,21 +10,25 @@ import { stringify } from 'querystring';
 
 export class PostFormComponent implements OnInit {
   isModalOpen: boolean;
-  
-  
+
+@Input() title: string;
+@Input() thought: string; 
+@Input() posts = [];
+
+
 @Output() closed = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
 }
 
+submitPost(newPost){
+  this.posts.push({title: this.title, thought: this.thought});
+  console.log("HEY");
+}
+
 closeModal() {
   this.closed.emit();
-  }
-
-
-submitPost(post: string){
-    this.posts.push({title: string, thought: string});
   } 
 
 }
