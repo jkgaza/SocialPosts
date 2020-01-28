@@ -24,6 +24,7 @@ export class PostFormComponent implements OnInit {
 
 submitPost(newPost){
   this.posts.push({title: this.title, thought: this.thought});
+  this.closed.emit();
   console.log("HEY");
 }
 
