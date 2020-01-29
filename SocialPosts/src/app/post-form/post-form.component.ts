@@ -2,6 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 // import { stringify } from 'querystring';
 
 
+
 @Component({
   selector: 'app-post-form',
   templateUrl: './post-form.component.html',
@@ -10,9 +11,11 @@ import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
 export class PostFormComponent implements OnInit {
   isModalOpen: boolean;
+ 
 
 @Input() title: string;
-@Input() thought: string; 
+@Input() thought: string;
+@Input() newPost: string;
 @Input() posts = [];
 
 
@@ -22,7 +25,7 @@ export class PostFormComponent implements OnInit {
   ngOnInit() {
 }
 
-submitPost(newPost){
+submitPost(newPost : string){
   this.posts.push({title: this.title, thought: this.thought});
   this.closed.emit();
   console.log("HEY");
