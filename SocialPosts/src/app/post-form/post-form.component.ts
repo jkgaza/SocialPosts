@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
-import { stringify } from 'querystring';
-// import { stringify } from 'querystring';
+import { Post } from '../post/post.component';
 
 
 
@@ -16,22 +15,24 @@ export class PostFormComponent implements OnInit {
 
 @Input() title: string;
 @Input() thought: string;
-@Input() newPost: string;
+ newPost: string;
+ newTitle: string;
 @Input() posts = [];
 
 
 @Output() closed = new EventEmitter();
+@Output() newThought = new EventEmitter <Post>();
   constructor() { }
 
   ngOnInit() {
 }
 
-submitPost(newPost: string){
-  this.posts.push({title: this.title, thought: this.thought});
+submitPost(){
+  
   this.closed.emit();
   console.log("HEY");
-  console.log([newPost]);
-  // this.newPost.emit({title: this.title, thought: this.thought})
+  
+  this.newThought.emit({title: this.newTitle, thought: this.newPost});
 }
 
 closeModal() {

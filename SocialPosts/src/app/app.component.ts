@@ -10,17 +10,11 @@ export class AppComponent implements OnInit {
   @Input() thought: string;
   // title = 'SocialPosts';
 
-  public isModalOpen = false;
+ 
 
   constructor() {}
 
   ngOnInit() {}
 
-  onOpenModal() {
-    this.isModalOpen = true;
-  }
-
-  closeModal() {
-    this.isModalOpen = false;
-  }
+ 
 }

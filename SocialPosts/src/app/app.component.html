@@ -1,11 +1,10 @@
-<h1>My Thoughts</h1>
-<button id = "myBtn" class = "new-button" (click) = "onOpenModal()">New Thought</button>
+
 <div id ="main-container">
 
 
 
     
-    <app-post-form *ngIf = "isModalOpen" (closed) = "closeModal()"></app-post-form>
+    
     <app-social-posts  (delete) = "onDeleted(i)"></app-social-posts>
     
     

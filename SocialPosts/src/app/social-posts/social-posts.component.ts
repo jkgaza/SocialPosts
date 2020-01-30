@@ -9,7 +9,7 @@ export class SocialPostsComponent implements OnInit {
   @Input() title: string;
   @Input() thought: string;
 
-
+  public isModalOpen = false;
   posts = [
     {title: "Saw a dog today", thought: "It was super neat."},
     {title: "I bought a coffee", thought: "I had a hard day and I wanted to. Treat. My. Self."},
@@ -29,6 +29,22 @@ export class SocialPostsComponent implements OnInit {
 
   onDeleted(index: number){
     this.posts.splice(index, 1);
+  }
+
+  closeModal() {
+    this.isModalOpen = false;
+  }
+
+  onOpenModal() {
+    this.isModalOpen = true;
+  }
+
+ 
+
+  newAdd($event){
+    console.log($event);
+    this.posts.push($event);
+    console.log("Here");
   }
 
 }
